@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Student Leader & Researcher</title>
+    <!-- Google Fonts for premium, crisp typography -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #fcfcfc;
+            --text-main: #1a1a1a;
+            --text-muted: #555555;
+            --accent: #2b5c8f; /* Change this to your favorite subtle color */
+            --border: #e5e5e5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 4rem 2rem;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        header {
+            margin-bottom: 3.5rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .bio {
+            font-size: 1rem;
+            color: var(--text-main);
+            font-weight: 400;
+        }
+
+        /* Section Layout */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        /* Impact Metrics Block */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .metric-card {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            padding: 1.25rem;
+            border-radius: 6px;
+        }
+
+        .metric-number {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 0.25rem;
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Interactive Collapsible Accordions for Experience */
+        details {
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+        }
+
+        details[open] {
+            padding-bottom: 1.2rem;
+        }
+
+        summary {
+            list-style: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: 500;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .role-title {
+            color: var(--text-main);
+        }
+
+        .role-date {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .details-content {
+            margin-top: 0.75rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            padding-left: 0.5rem;
+        }
+
+        /* Links and Lists */
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        .press-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+        }
+
+        .press-source {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Footer Contacts */
+        footer {
+            margin-top: 5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 480px) {
+            body { padding: 2rem 1rem; }
+            .metrics-grid { grid-template-columns: 1fr; }
+            summary { flex-direction: column; gap: 0.25rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header>
+        <h1>Your Name</h1>
+        <div class="subtitle">Student Researcher & Policy Advocate</div>
+        <p class="bio">
+            I am a high school student based in Texas focused on leveraging civic engagement and scientific discovery to address systemic resource gaps. Welcome to my digital portfolio.
+        </p>
+    </header>
+
+    <!-- IMPACT METRICS -->
+    <section>
+        <h2>Global Impact</h2>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-number">14+</div>
+                <div class="metric-label">Countries reached by community initiatives</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">500k+</div>
+                <div class="metric-label">Items distributed or people impacted globally</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEADERSHIP & EXPERIENCE (ACCORDIONS) -->
+    <section>
+        <h2>Leadership & Roles</h2>
+        
+        <details>
+            <summary>
+                <span class="role-title">Advisory Council Member, State Board</span>
+                <span class="role-date">2026 — Present</span>
+            </summary>
+            <div class="details-content">
+                Advocating for student-centered policies, curriculum adjustments, and educational equity frameworks to ensure all public school students have a voice in state-level directives.
+            </div>
+        </details>
+
+        <details>
+            <summary>
+                <span class="role-title">Founder, Global Youth Initiative</span>
+                <span class="role-date">2024 — Present</span>
+            </summary>
+            <div class="details-content">
+                Co-founded a student-led organization aimed at wellness and global outreach. Scaled the community model across international lines and coordinated logistics for hospital deliveries.
+            </div>
+        </details>
+    </section>
+
+    <!-- RESEARCH & PROJECTS -->
+    <section>
+        <h2>Research & Initiatives</h2>
+        <ul>
+            <li>
+                <strong>STEM Pathway Equity:</strong> Developing open-access peer tutoring scripts and lab access proposals for underfunded public schools.
+            </li>
+            <li>
+                <strong>Independent Study:</strong> Investigating public policy models regarding regional educational access and diverse cultural inclusion frameworks.
+            </li>
+        </ul>
+    </section>
+
+    <!-- PRESS & MEDIA -->
+    <section>
+        <h2>Selected Press</h2>
+        <ul>
+            <li class="press-item">
+                <a href="#" target="_blank">Recognized as State Educational Leader</a>
+                <span class="press-source">SBOE News</span>
+            </li>
+            <li class="press-item">
+                <a href="#" target="_blank">How Youth Activism Is Transforming Policy</a>
+                <span class="press-source">Local Herald</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- FOOTER CHANNELS -->
+    <footer>
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+    </footer>
+
+</body>
+</html>
